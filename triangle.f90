@@ -4,7 +4,7 @@ implicit none
 real :: a,b,th,c,area,th_rad
 print *,'Enter the value of a,b,th'
 read *,a,b,th
-print *,'a=',a , 'b=',b 
+print *,'a=',a , 'b=',b !i missed the comma b/w a & b
 
 th_rad=(th*3.14)/180.0
  c=sqrt(a**2+b**2-2*a*b*cos(th_rad))
