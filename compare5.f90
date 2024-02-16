@@ -1,4 +1,4 @@
-!comparing of 5 digits
+!comparing of 5 digits using if-end if
 Program conditional
 implicit none
 integer :: a,b,c,d,e
