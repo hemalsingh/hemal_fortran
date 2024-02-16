@@ -1,4 +1,4 @@
-!comparing of 5 digits
+!comparision of 5 digits using elseif.
 Program conditional
 implicit none
 integer :: a,b,c,d,e
