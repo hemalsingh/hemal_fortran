@@ -1,3 +1,4 @@
+!assingment 1
 !The marks distribution of a course is : attendance 10%, class tests 20%, midterm exam 20%, final exam 50%. The grades are given as: A for >= 90%, B for >= 80% & <90%, C for >=70% & <80%, D for >=60% & < 70%.
 !If the teachers takes 40 classes and if the class test, midterm, & final exam have full marks of 100 each, WAP to calculate a student's grades.
 
