@@ -1,24 +1,19 @@
-program sine_series
-    implicit none
-    integer, parameter :: n = 10 ! Number of terms in the series
-    real(8) :: x, sin_x, term
-    integer :: i
+program Sine 
+implicit none
+real::x,U,S !Here x=radian,U =1st term (reiterated),S=sum of the sine series
+integer::i,n !i = the vairable of the loop,n = no. of terms
+print *,'enter the no. of terms and the radian'
+read *, n,x 
 
-    ! Input: Angle in radians
-    print *, "Enter the angle (in radians):"
-    read *, x
-
-    ! Initialize sine value
-    sin_x = x
-
-    ! Compute the sine series
-    do i = 1, n
-        term = (-1.0)**i * x**(2*i + 1) / real((2*i + 1) * (2*i), 8)
-        sin_x = sin_x + term
-    end do
-
-    ! Output: Sine value
-    print *, "Sine(", x, ") =", sin_x
-
-    stop
-end program sine_series
+U=x 
+S=x !this is the first term
+if (n==1)then
+  print *, 'The sine series is:',S 
+else 
+  do i = 3,n,2 
+  U=-((x**2)/(i*(i-1)))*U
+  S=S+U 
+  end do
+  print *,'Sine series is:',S
+end if
+end program Sine
